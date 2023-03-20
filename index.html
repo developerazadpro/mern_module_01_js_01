@@ -49,5 +49,99 @@
         ram  : '4GB',
         isSSD: true
     }
-    document.write(MyLaptop.ram);
+    //document.write(MyLaptop.ram);
+
+
+    // Array concat
+    const city1 = ['Dhaka', 'Rangpur', 'Dinajpur'];
+    const city2 = ['Barisal', 'Rajshahi', 'Sylhet'];
+    const cities = city1.concat(city2);
+    console.log(cities);
+    //document.writeln(cities);
+
+    // Array Filter
+    var marks = [50,40,45,37,55];
+    var result = marks.filter(check);
+    function check(value){
+        return value > 400;
+    }
+    //document.write(result);
+
+    // Array find and findIndex
+    var findFirstValue = marks.find(check) // return the first value of satisfying condition
+    var findFirstValueIndex = marks.findIndex(check) // if didnot find the expected result then return -1
+    //document.write(findFirstValue) 
+    //document.write(findFirstValueIndex) 
+    var res = marks.find(x => x > 40)
+    var resIndex = marks.findIndex(x => x > 40)
+    //document.writeln(resIndex);
+
+
+    // Array foreach
+    marks.forEach(function(mark) {
+        //document.writeln(mark);
+    })
+
+    // Array include // check if item exist or not, return true or false
+    //document.write(marks.includes(100))
+
+    // indexOf, lastIndexOf
+    //document.write(marks.indexOf(400));
+    //document.write(marks.lastIndexOf(40));
+
+    // push an pop
+    marks.push(100)
+    marks.push(200)
+    //document.writeln(marks);
+    marks.pop();
+    //document.writeln(marks);
+
+
+    // array reverse
+    marks.reverse();
+    //document.writeln(marks);
+
+    // array slice  => does not change orginal array
+    var arr = [0,1,2,3,4,5,6,7,8,9];
+    //document.writeln(arr.slice(1, 5)); // (from(index) , to(index) not include) == return value from start index to end index, does not change original array
+
+    //document.writeln(arr.splice(1, 6)); // end index included, kete niye ase, change orginal array
+    //document.writeln('new array => '+ arr);
+    var arr = ['A', 'B', 'C', 'E', 'F'];
+    var res_arr = arr.splice(2, 0, 'D');
+    document.writeln(res_arr);
+    
+    // sort array
+    var arrr = [5,4,9,10];
+    var r = arrr.sort(function(a , b){
+        return a - b
+    });
+
+    var rr = arrr.sort(function(a , b){
+        return b -a
+    });
+    //document.writeln(rr);
+
+
+    // string method
+    var country = 'Bangladesh';
+    //document.write(country[1]);
+    //document.write(country.replace('d', 'ddddddddd'));
+    //document.write(country.substr(1));
+    //document.write(country.substring(1));
+
+
+    // date
+    var d = '2022-03-20';
+   // document.write(getDay(d));
+
+
+    document.write(isFinite(1111111111111111111*10^1111111111));
+    document.write(toString(111));
+
+
+
+
+
+
 </script>
