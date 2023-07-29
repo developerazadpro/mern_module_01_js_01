@@ -1,11 +1,7 @@
 // Javascript array
-const city = [1,2,3];//['Dhaka', 'Rangpur', 'Dinajpur'];
-for(var i = 0; i < 5; i++){
-    //console.log(city[i]);
-    console.log(i);
-    if(i == 5){
-break;
-    }
+const city = ['Dhaka', 'Rangpur', 'Dinajpur'];
+for(var i = 0; i < city.length; i++){
+    console.log(city[i]);
 }
 
 // foreach method
